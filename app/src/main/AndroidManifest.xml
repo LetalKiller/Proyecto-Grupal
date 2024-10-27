@@ -13,6 +13,18 @@
         android:theme="@style/Theme.ProyectoGrupal"
         tools:targetApi="31">
         <activity
+            android:name=".Estadio"
+            android:exported="false" />
+        <activity
+            android:name=".Uniforme"
+            android:exported="false" />
+        <activity
+            android:name=".Plantilla"
+            android:exported="false" />
+        <activity
+            android:name=".Historia"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
