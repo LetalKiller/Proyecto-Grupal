@@ -37,32 +37,36 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#504444"
-            android:text="Plantilla" />
+            android:backgroundTint="#FFC107"
+            android:text="Plantilla"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/botonH"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#504444"
-            android:text="Historia" />
+            android:backgroundTint="#FFC107"
+            android:text="Historia"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/botonU"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#504444"
-            android:text="Uniforme" />
+            android:backgroundTint="#FFC107"
+            android:text="Uniforme"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/botonE"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#504444"
-            android:text="Estadio" />
+            android:backgroundTint="#FFC107"
+            android:text="Estadio"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
