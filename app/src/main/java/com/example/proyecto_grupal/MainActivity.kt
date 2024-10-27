@@ -2,12 +2,17 @@ package com.example.proyecto_grupal
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         val btnP: Button = findViewById(R.id.botonP);
         btnP.setOnClickListener ({
             val intent1: Intent = Intent(this, Plantilla::class.java)
@@ -41,4 +47,5 @@ class MainActivity : AppCompatActivity() {
         })
 
     }
+
 }
