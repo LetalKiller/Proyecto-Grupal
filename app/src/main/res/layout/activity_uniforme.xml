@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6DB2ED"
     tools:context=".Uniforme">
 
     <!-- Contenedor Principal -->
@@ -15,8 +16,124 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:id="@+id/txtEquip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="Equipamiento de los Warrios"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtClasico"
+            android:layout_width="147dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="28dp"
+            android:text="Uniforme Azul Clásico (1989-1997)"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txtCity"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+        <TextView
+            android:id="@+id/txtCity"
+            android:layout_width="109dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="56dp"
+            android:text="Equipacion The City(1966-1971)"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="329dp"
+            android:layout_height="153dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Logo de Warriors"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEquip"
+            app:srcCompat="@drawable/imagen_de_logo" />
+
+        <ImageView
+            android:id="@+id/imgcity"
+            android:layout_width="110dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCity"
+            app:srcCompat="@drawable/equipo_de_city" />
+
+        <ImageView
+            android:id="@+id/imgClasico"
+            android:layout_width="146dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgcity"
+            app:layout_constraintHorizontal_bias="0.213"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtClasico"
+            app:srcCompat="@drawable/equipo_de_ac" />
+
+        <ImageView
+            android:id="@+id/imgBay"
+            android:layout_width="130dp"
+            android:layout_height="109dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtBay"
+            app:srcCompat="@drawable/equipo_de_tb" />
+
+        <TextView
+            android:id="@+id/txtWB"
+            android:layout_width="141dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="44dp"
+            android:text="Equipación de &quot;We Believe&quot; (2006-2007)"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txtBay"
+            app:layout_constraintHorizontal_bias="0.267"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgClasico" />
+
+        <TextView
+            android:id="@+id/txtBay"
+            android:layout_width="130dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="40dp"
+            android:text="Equipación &quot;The Bay&quot; (desde 2017)"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgcity" />
 
         <!-- LinearLayout con los botones -->
+        <ImageView
+            android:id="@+id/imgWB"
+            android:layout_width="141dp"
+            android:layout_height="109dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgBay"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtWB"
+            app:srcCompat="@drawable/equipo_de_wb" />
+
         <LinearLayout
             android:id="@+id/buttonLayout"
             android:layout_width="0dp"
